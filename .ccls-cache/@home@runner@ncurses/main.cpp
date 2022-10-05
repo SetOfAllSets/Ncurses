@@ -88,7 +88,7 @@ int main() {
   actually, could you use X in a pygame project due to it having a screen?*/
   box(snakewin,0,0);
   //snake loop start
-  //score will be length/time*100000 rounded to be an int
+  //score will be length/time since last collect*100000 rounded to be an int
   wrefresh(snakewin);
   vector<string> coordsy;
   vector<string> coordsx;
@@ -99,7 +99,7 @@ int main() {
   string direction = ">";
   
   while(true) {
-    
+    break;
   };
   //snake loop end
   getch();
