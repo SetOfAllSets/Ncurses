@@ -2,7 +2,6 @@
 #include <ncurses.h>
 #include <iostream>
 #include <set>
-#include <vector>
 
 using namespace std;
 
@@ -10,7 +9,6 @@ int main() {
   initscr();
   noecho();
   curs_set(0);
-  init_pair(1, COLOR_CYAN, COLOR_GREEN);
   clear();
   refresh();
   //start making a menu window
@@ -90,13 +88,6 @@ int main() {
   //snake loop start
   //score will be length/time since last collect*100000 rounded to be an int
   wrefresh(snakewin);
-  vector<string> coordsy;
-  vector<string> coordsx;
-  vector<string> foodcoordsy;
-  vector<string> foodcoordsx;
-  vector<string> wallcoordsy;
-  vector<string> wallcoordx;
-  string direction = ">";
   
   while(true) {
     break;
